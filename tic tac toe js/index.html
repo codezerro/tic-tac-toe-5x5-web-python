@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+		Tic Tac Toe with Minimax AI Algorithm
+		Author: Clederson Cruz
+		Year: 2017
+		License: GNU GENERAL PUBLIC LICENSE (GPL)
+		-->
+
+		<meta charset="UTF-8" />
+		<meta content="Clederson Cruz" name="author" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link type="text/css" rel="stylesheet" href="web_version/style.css" />
+		<script type="text/javascript" src="web_version/aiScript.js"></script>
+		<!-- <script type="text/javascript" src="web_version/script.js"></script> -->
+	</head>
+	<body>
+		<header>
+			<p>Minimax Algorithm</p>
+		</header>
+		<br />
+		<p id="message"></p>
+		<br />
+		<table id="tab-tic-tac-toe" cellspacing="1">
+			<tr>
+				<td id="00" onclick="clickedCell(this)"></td>
+				<td id="01" onclick="clickedCell(this)"></td>
+				<td id="02" onclick="clickedCell(this)"></td>
+				<td id="03" onclick="clickedCell(this)"></td>
+				<td id="04" onclick="clickedCell(this)"></td>
+			</tr>
+			<!-- 2nd -->
+			<tr>
+				<td id="10" onclick="clickedCell(this)"></td>
+				<td id="11" onclick="clickedCell(this)"></td>
+				<td id="12" onclick="clickedCell(this)"></td>
+				<td id="13" onclick="clickedCell(this)"></td>
+				<td id="14" onclick="clickedCell(this)"></td>
+			</tr>
+			<!-- 3rd -->
+			<tr>
+				<td id="20" onclick="clickedCell(this)"></td>
+				<td id="21" onclick="clickedCell(this)"></td>
+				<td id="22" onclick="clickedCell(this)"></td>
+				<td id="23" onclick="clickedCell(this)"></td>
+				<td id="24" onclick="clickedCell(this)"></td>
+			</tr>
+			<!-- 4th -->
+			<tr>
+				<td id="30" onclick="clickedCell(this)"></td>
+				<td id="31" onclick="clickedCell(this)"></td>
+				<td id="32" onclick="clickedCell(this)"></td>
+				<td id="33" onclick="clickedCell(this)"></td>
+				<td id="34" onclick="clickedCell(this)"></td>
+			</tr>
+			<!-- 5th -->
+			<tr>
+				<td id="40" onclick="clickedCell(this)"></td>
+				<td id="41" onclick="clickedCell(this)"></td>
+				<td id="42" onclick="clickedCell(this)"></td>
+				<td id="43" onclick="clickedCell(this)"></td>
+				<td id="44" onclick="clickedCell(this)"></td>
+			</tr>
+		</table>
+
+		<br /><br />
+		<input type="button" value="Start AI" id="bnt-restart" onclick="restartBnt(this)" />
+		<br />
+	</body>
+</html>
