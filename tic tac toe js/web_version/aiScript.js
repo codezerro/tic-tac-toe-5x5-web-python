@@ -173,74 +173,154 @@ function clickedCell(cell) {
 			}
 		}
 	}
-	// if (gameOver(board, COMP)) {
-	// 	var lines;
-	// 	var cell;
-	// 	var msg;
+	if (gameOver(board, COMP)) {
+		var lines;
+		var cell;
+		var msg;
 
-	// 	if (board[0][0] == 1 && board[0][1] == 1 && board[0][2] == 1)
-	// 		lines = [
-	// 			[0, 0],
-	// 			[0, 1],
-	// 			[0, 2],
-	// 		];
-	// 	else if (board[1][0] == 1 && board[1][1] == 1 && board[1][2] == 1)
-	// 		lines = [
-	// 			[1, 0],
-	// 			[1, 1],
-	// 			[1, 2],
-	// 		];
-	// 	else if (board[2][0] == 1 && board[2][1] == 1 && board[2][2] == 1)
-	// 		lines = [
-	// 			[2, 0],
-	// 			[2, 1],
-	// 			[2, 2],
-	// 		];
-	// 	else if (board[0][0] == 1 && board[1][0] == 1 && board[2][0] == 1)
-	// 		lines = [
-	// 			[0, 0],
-	// 			[1, 0],
-	// 			[2, 0],
-	// 		];
-	// 	else if (board[0][1] == 1 && board[1][1] == 1 && board[2][1] == 1)
-	// 		lines = [
-	// 			[0, 1],
-	// 			[1, 1],
-	// 			[2, 1],
-	// 		];
-	// 	else if (board[0][2] == 1 && board[1][2] == 1 && board[2][2] == 1)
-	// 		lines = [
-	// 			[0, 2],
-	// 			[1, 2],
-	// 			[2, 2],
-	// 		];
-	// 	else if (board[0][0] == 1 && board[1][1] == 1 && board[2][2] == 1)
-	// 		lines = [
-	// 			[0, 0],
-	// 			[1, 1],
-	// 			[2, 2],
-	// 		];
-	// 	else if (board[2][0] == 1 && board[1][1] == 1 && board[0][2] == 1)
-	// 		lines = [
-	// 			[2, 0],
-	// 			[1, 1],
-	// 			[0, 2],
-	// 		];
+		if (board[0][0] == 1 && board[1][1] == 1 && board[2][2] == 1 && board[3][3] == 1 && board[4][4] == 1) {
+			lines = [
+				[0, 0],
+				[1, 1],
+				[2, 2],
+				[3, 3],
+				[4, 4],
+			];
+		} else if (board[0][0] == 1 && board[0][1] == 1 && board[0][2] == 1 && board[0][3] == 1 && board[0][4] == 1) {
+			lines = [
+				[0, 0],
+				[0, 1],
+				[0, 2],
+				[0, 3],
+				[0, 4],
+			];
+		} else if (board[0][0] == 1 && board[1][0] == 1 && board[2][0] == 1 && board[3][0] == 1 && board[4][0] == 1) {
+			lines = [
+				[0, 0],
+				[1, 0],
+				[2, 0],
+				[3, 0],
+				[4, 0],
+			];
+		} else if (board[0][1] == 1 && board[1][1] == 1 && board[2][1] == 1 && board[3][1] == 1 && board[4][1] == 1) {
+			lines = [
+				[0, 1],
+				[1, 1],
+				[2, 1],
+				[3, 1],
+				[4, 1],
+			];
+		} else if (board[0][2] == 1 && board[1][2] == 1 && board[2][2] == 1 && board[3][2] == 1 && board[4][2] == 1) {
+			lines = [
+				[0, 2],
+				[1, 2],
+				[2, 2],
+				[3, 2],
+				[4, 2],
+			];
+		} else if (board[0][3] == 1 && board[1][3] == 1 && board[2][3] == 1 && board[3][3] == 1 && board[4][3] == 1) {
+			lines = [
+				[0, 3],
+				[1, 3],
+				[2, 3],
+				[3, 3],
+				[4, 3],
+			];
+		} else if (board[0][4] == 1 && board[1][4] == 1 && board[2][4] == 1 && board[3][4] == 1 && board[4][4] == 1) {
+			lines = [
+				[0, 0],
+				[1, 4],
+				[2, 4],
+				[3, 4],
+				[4, 4],
+			];
+		} else if (board[1][0] == 1 && board[1][1] == 1 && board[1][2] == 1 && board[1][3] == 1 && board[1][4] == 1) {
+			lines = [
+				[1, 0],
+				[1, 1],
+				[1, 2],
+				[1, 3],
+				[1, 4],
+			];
+		} else if (board[2][0] == 1 && board[2][1] == 1 && board[2][2] == 1 && board[2][3] == 1 && board[2][4] == 1) {
+			lines = [
+				[2, 0],
+				[2, 1],
+				[2, 2],
+				[2, 3],
+				[2, 4],
+			];
+		} else if (board[3][0] == 1 && board[3][1] == 1 && board[3][2] == 1 && board[3][3] == 1 && board[3][4] == 1) {
+			lines = [
+				[2, 0],
+				[2, 1],
+				[2, 2],
+				[2, 3],
+				[2, 4],
+			];
+		} else if (board[4][0] == 1 && board[4][1] == 1 && board[4][2] == 1 && board[4][3] == 1 && board[4][4] == 1) {
+			lines = [
+				[4, 0],
+				[4, 1],
+				[4, 2],
+				[4, 3],
+				[4, 4],
+			];
+		} else if (board[4][0] == 1 && board[4][1] == 1 && board[4][2] == 1 && board[4][3] == 1 && board[4][4] == 1) {
+			lines = [
+				[4, 0],
+				[4, 1],
+				[4, 2],
+				[4, 3],
+				[4, 4],
+			];
+		} else if (board[0][4] == 1 && board[1][3] == 1 && board[2][2] == 1 && board[3][1] == 1 && board[4][0] == 1) {
+			lines = [
+				[0, 4],
+				[1, 3],
+				[3, 2],
+				[3, 1],
+				[4, 0],
+			];
+		}
 
-	// 	for (var i = 0; i < lines.length; i++) {
-	// 		cell = document.getElementById(String(lines[i][0]) + String(lines[i][1]));
-	// 		cell.style.color = 'red';
-	// 	}
+		for (var i = 0; i < lines.length; i++) {
+			cell = document.getElementById(String(lines[i][0]) + String(lines[i][1]));
+			cell.style.color = 'red';
+		}
 
-	// 	msg = document.getElementById('message');
-	// 	msg.innerHTML = 'You lose!';
-	// }
-	// if (emptyCells(board).length == 0 && !gameOverAll(board)) {
-	// 	var msg = document.getElementById('message');
-	// 	msg.innerHTML = 'Draw!';
-	// }
-	// if (gameOverAll(board) == true || emptyCells(board).length == 0) {
-	// 	button.value = 'Restart';
-	// 	button.disabled = false;
-	// }
+		msg = document.getElementById('message');
+		msg.innerHTML = 'You lose!';
+	}
+	if (emptyCells(board).length == 0 && !gameOverAll(board)) {
+		var msg = document.getElementById('message');
+		msg.innerHTML = 'Draw!';
+	}
+	if (gameOverAll(board) == true || emptyCells(board).length == 0) {
+		button.value = 'Restart';
+		button.disabled = false;
+	}
+}
+
+/* Restart the game*/
+function restartBnt(button) {
+	if (button.value == 'Start AI') {
+		aiTurn();
+		button.disabled = true;
+	} else if (button.value == 'Restart') {
+		var htmlBoard;
+		var msg;
+
+		for (var x = 0; x < 5; x++) {
+			for (var y = 0; y < 5; y++) {
+				board[x][y] = 0;
+				htmlBoard = document.getElementById(String(x) + String(y));
+				htmlBoard.style.color = '#444';
+				htmlBoard.innerHTML = '';
+			}
+		}
+		button.value = 'Start AI';
+		msg = document.getElementById('message');
+		msg.innerHTML = '';
+	}
 }
