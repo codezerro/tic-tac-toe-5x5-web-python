@@ -1,12 +1,17 @@
 /* ****************** Body, head etc ****************** */
-body {
+/* body {
 	margin: 0;
 	padding: 0;
+	background-color: rgb(2, 255, 255);
+} */
+.upper {
+	z-index: 100;
 }
 
 header {
+	/* z-index: 100; */
 	background-color: #00aeea;
-	color: #eee;
+	color: black;
 	text-align: center;
 	height: 60px;
 	padding-top: 5px;
@@ -16,9 +21,11 @@ header {
 	box-sizing: border-box;
 	position: relative;
 	width: 100%;
+	font-size: 100px;
 }
 
 p {
+	/* z-index: 100; */
 	font-size: 14pt;
 	font-weight: bold;
 	font-family: Sans;

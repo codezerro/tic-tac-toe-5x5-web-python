@@ -98,7 +98,6 @@ function evalute(state) {
 }
 
 /* *** AI function that choice the best move *** */
-// Read more on https://github.com/Cledersonbc/tic-tac-toe-minimax/
 function minimax(state, depth, player) {
 	var best;
 
@@ -138,8 +137,8 @@ function aiTurn() {
 	var cell;
 
 	if (emptyCells(board).length == 25) {
-		x = parseInt(Math.random() * 25);
-		y = parseInt(Math.random() * 25);
+		x = parseInt(Math.random() * 4);
+		y = parseInt(Math.random() * 4);
 	} else {
 		move = minimax(board, 5, COMP); //emptyCells(board).length
 		x = move[0];
@@ -228,7 +227,7 @@ function clickedCell(cell) {
 			];
 		} else if (board[0][4] == 1 && board[1][4] == 1 && board[2][4] == 1 && board[3][4] == 1 && board[4][4] == 1) {
 			lines = [
-				[0, 0],
+				[0, 4],
 				[1, 4],
 				[2, 4],
 				[3, 4],
